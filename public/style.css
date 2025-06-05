@@ -24,6 +24,17 @@ footer p {
     color: #a6a6a6;
 }
 
+.logo-u {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    left: 50%;
+    top: 50%;
+    font-size: 48px;
+    color: #fff;
+    animation: fadeColors 1200ms infinite alternate;
+}
+
 .branding {
     font-family: "Belleza", sans-serif;
     font-size: 18pt;
@@ -65,6 +76,13 @@ footer p {
 
 @media screen and (min-width: 640px) {
     nav { text-align: center; }
+    .branding { font-size: 24pt; }
+    .logo-u { visibility: hidden; }
     .card { width: 300px; }
     .hero { background-image: url('./images/desktop/huxley.jpg'); }
+}
+
+@keyframes fadeColors {
+    from { color: #fff; }
+    to { color: rgb(233, 65, 105); }
 }
